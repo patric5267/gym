@@ -1,0 +1,99 @@
+.mainsign{
+    display: flex;
+    justify-content: center;
+}
+.mainsign h1{
+    margin-bottom: 1rem;
+}
+.innersign{
+   /* border:1px solid red; */
+   background-color: white;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+}
+.inner1{
+    /* background-color: #ff000012; */
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.name input{
+    width: 18rem;
+    border: 1px solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    outline: none;
+    padding-left: 0.5rem;
+    font-size: 1.5vw;
+    
+}
+.name img{
+    width: 2.5rem;
+}
+.inner2{
+    background-color: #00800026;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.name .imagecon{
+    border: 1px solid black;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.inner2 img{
+    width: 100%;
+}
+.btnsign button{
+    width: 21rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    outline: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.user{
+    display: flex;
+}
+.user .login{
+    margin-left: 0.2rem;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}    
+@media only screen and (max-width: 768px) {
+  .name{
+    width: 17rem;
+  }
+  .btnsign button{
+    width: 17rem;
+    font-size: 5vw;
+
+  }
+}
+@media only screen and (max-width: 425px) {
+  .inner2{
+    display: none;
+  }
+  .name input{
+     font-size: 5vw;
+  }
+  .user{
+    font-size: 4vw;
+  }
+}

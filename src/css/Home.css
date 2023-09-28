@@ -1,0 +1,565 @@
+.searchbox {
+    display: flex;
+    justify-content: center;
+
+}
+body{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.searchbox .inner {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+}
+.inner .box h1{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.input input {
+    width: 46rem;
+    outline: none;
+    height: 2.6rem;
+    font-size: 1.4rem;
+    padding-left: 0.2rem;
+}
+.inner .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow {
+    height: 3rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    cursor: pointer;
+}
+
+.arrow img {
+    width: 3rem;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.searchquery{
+    display: flex;
+    flex-direction: row;
+}
+@keyframes arrow {
+    from {
+        margin-left: 0rem;
+    }
+
+    to {
+        margin-left: 2rem;
+    }
+}
+.names{
+    display: flex;
+    justify-content: center;
+}
+.names .innername{
+    /* border: 1px solid green; */
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+}
+.caursel{
+    /* border: 1px solid red; */
+    width: 50%;
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.c1{
+    /* background-color: blue; */
+    width: 100%;
+    height: 31rem;
+    display: flex;
+    justify-content: center;
+}
+.c1 img{
+   width: 100%;
+}
+.c2{
+    background-color: #00000057;
+    width: 50%;
+    height: 31rem;
+    position: absolute;
+}
+.items{
+    /* border: 1px solid blue; */
+    width: 50%;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.item1{
+    width: 100%;
+    height: 31rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item2{
+    background-color: #000000a8;
+    width: 50%;
+    height: 31rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item2 .list{
+    width: 100%;
+    /* border: 1px solid white; */
+}
+.list .gympart{
+    display: grid;
+    grid-template-columns: 11rem 11rem 11rem;
+    justify-content: space-evenly;
+    row-gap: 2rem;
+}
+.gympart .part{
+    height: 4rem;
+    border: 1px solid white;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.part:hover .part1{
+    width: 10.8rem;
+    transition: 2s;
+}
+.part:hover .part2{
+    border: 0px solid white;
+}
+.part .part1{
+    background-color: black;
+    /* width: 11rem; */
+    width: 0rem;
+    height: 4rem;
+}
+.part .part2{
+    background-color: transparent;
+    width: 11rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 1.5rem;
+    /* border: 1px solid red; */
+    color: white;
+    cursor: pointer;
+}
+.display{
+    display: flex;
+    justify-content: center;
+}
+.display .innerdisplay{
+    padding-top: 2rem;
+    /* border: 1px solid green; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18rem 18rem 18rem;
+    justify-content: space-evenly;
+    row-gap: 1rem;
+    padding-bottom: 1rem;
+}
+.innerdisplay .card{
+    height: 21rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.card .card1{
+   background-color: black;
+    width: 100%;
+    height: 1rem;
+}
+.card .card2{
+    border: 1px solid black;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+}
+.card2 img{
+    width: 17rem;
+    height: 15rem;
+}
+.card .card3{
+    border: 1px solid black;
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0000008c;
+    color: white;
+}
+
+.loading img{
+    width: 4rem;
+    height: 4rem;
+}
+.innerdisplay .loading{
+   padding-bottom: 1rem;
+}
+.last{
+    display: flex;
+    justify-content: center;
+}
+.last .rep{
+    background-color: #000000e0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+.rep .close{
+    display: flex;
+    justify-content: center;
+}
+.close .close1{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+}
+.overview{
+    display: flex;
+    justify-content: center;
+    
+}
+.overview .show{
+    /* border: 1px solid white; */
+    width: 100%;
+    /* height: 4rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show .show1{
+    /* border: 1px solid green; */
+    width: 70%;
+    height: 34rem;
+    display: flex;
+    justify-content: center;
+}
+.show1 .left{
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.left img{
+    width: 100%;
+}
+.show1 .right{
+    border: 1px solid white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right .right1{
+    /* border: 1px solid white; */
+    width: 90%;
+    height: 31rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right1 .info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.right1 h1{
+    text-align: center;
+}
+.info div h2{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.info div{
+    margin-bottom: 1rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer .footercon {
+    width: 100%;
+    height: 4rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.dropdown{
+    display: flex;
+    justify-content:center;
+}
+.drop{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.con1{
+    /* background-color: green; */
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+}
+.con1 img{
+    width: 4rem;
+}
+.con2{
+    /* background-color: #ff00000d; */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.con2 button{
+    width: 15rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    outline: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-bottom: 10rem;
+}
+@media only screen and (max-width: 1024px) {
+    .c1 img {
+        width: 32rem;
+    }
+    .list .gympart{
+        grid-template-columns: 6rem 6rem 6rem;
+        justify-content: space-evenly;
+        row-gap: 4rem;
+    }
+    .gympart .part{
+        height: 3rem;
+    }
+    .part .part2{
+        height: 3rem;
+    }
+    .part:hover .part1{
+        width: 5.9rem;
+    } 
+    .part .part2{
+        background-color: transparent;
+        width: 6rem;
+        font-size: 1rem;
+    }   
+    .show .show1 {
+        height: 28rem;
+    }
+    .right .right1 {
+        /* border: 1px solid white; */
+        width: 90%;
+        height: 100%;
+    }
+    .right1 h2 {
+        font-size: 2.2rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .input input{
+        width: 32rem;
+    }
+    .c1{
+        height: 20rem;
+    }    
+    .c1 img {
+        width: 24rem;
+    }
+    .c2{
+        height: 20rem;
+    }
+    .item1{
+        height: 20rem;
+    }
+    .item2{
+        height: 20rem;
+    }
+    .list .gympart{
+        grid-template-columns: 6rem 6rem 6rem;
+        justify-content: space-evenly;
+        row-gap: 2rem;
+    }
+    .gympart .part{
+        height: 3rem;
+    }
+    .part .part2{
+        height: 3rem;
+    }
+    .part:hover .part1{
+        width: 5.9rem;
+    } 
+    .part .part2{
+        background-color: transparent;
+        width: 6rem;
+        font-size: 1rem;
+    }   
+    .display .innerdisplay {
+        grid-template-columns: 12rem 12rem 12rem;
+    }
+    .show .show1 {
+        height: 28rem;
+    }
+    .right .right1 {
+        /* border: 1px solid white; */
+        width: 90%;
+        height: 100%;
+    }
+    .info div h2{
+        font-size: 1rem;
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    .input input{
+        width: 15rem;
+    }
+    .arrow {
+        height: 2.6rem;
+        width: 5rem;
+    }
+    .input input {
+        height: 2.3rem;
+        font-size: 1.2rem;
+    }
+    .arrow img{
+        width: 2rem;
+    }
+    .innername{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .caursel {
+        width: 100%;
+    }
+    .items{
+        width: 100%;
+    }
+    .c1{
+        height: 20rem;
+    }    
+    .c1 img{
+        width: 26.7rem;
+    }
+    .c2{
+        height: 20rem;
+        width: 100%;
+    }
+    .item1{
+        height: 20rem;
+    }
+    .item2{
+        height: 20rem;
+        width: 100%;
+    }
+    .list .gympart{
+        grid-template-columns: 6rem 6rem 6rem;
+        justify-content: space-evenly;
+        row-gap: 2rem;
+    }
+    .gympart .part{
+        height: 3rem;
+    }
+    .part .part2{
+        height: 3rem;
+    }
+    .part:hover .part1{
+        width: 5.9rem;
+    } 
+    .part .part2{
+        background-color: transparent;
+        width: 6rem;
+        font-size: 1rem;
+    }  
+    .display .innerdisplay{
+        grid-template-columns: 20rem;
+        justify-content: center;
+    } 
+    .overview .show {
+        height: 27rem;
+    }
+    .show .show1{
+        height: 27rem;
+        flex-direction: column;
+    }
+    .show1 .left{
+    
+        width: 100%;
+        height: 50%;
+    }
+    .show .right{
+       
+        width: 100%;
+        height: 50%;
+    }
+    .left img{
+        width: 18.6rem;
+    }
+    .right .right1 {
+        /* border: 1px solid white; */
+        width: 90%;
+        height: 100%;
+        
+    }
+    .info div h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .right1 h1 {
+        font-size: 1rem;
+    }
+    .con1 img{
+        width: 2.9rem;
+    }
+   
+
+}
+@media only screen and (max-width: 375px) {
+    .c1 img {
+        width: 23.7rem;
+    }
+    .left img{
+        width: 16.4rem;
+    }
+}

@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.maincon {
+    display: flex;
+    justify-content: center;
+}
+
+.maincon .inner {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .maincon  .inner div{
+    border: 1px solid green;
+    width: 4rem;
+    height: 4rem;
+} */
+.maincon .inner .firstcon {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 61rem;
+    display: flex;
+    justify-content: left;
+}
+
+.firstcon img {
+    width: 100%;
+}
+
+.maincon .inner .secondcon {
+    /* border: 1px solid green; */
+    width: 99.9%;
+    color: white;
+    background-color: #00000087;
+    position: absolute;
+    height: 61rem;
+    display: flex;
+    justify-content: left;
+}
+
+.secondcon .content {
+    width: 41rem;
+    /* border: 1px solid white; */
+    color: white;
+    height: 19rem;
+    margin-top: 15rem;
+}
+
+.content div {
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+.content .sweat {
+    font-size: 3.5rem;
+}
+
+.content .check {
+    font-size: 1.5rem;
+}
+
+.thirdcon {
+    height: 4rem;
+    background-color: #00000087;
+    position: absolute;
+    width: 99.9%;
+    /* border: 1px solid white; */
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.upperthird{
+    /* border: 1px solid white; */
+    width: 4rem;
+    height: 3rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.upperthird img{
+    width: 3rem;
+}
+.thirdcon .innerthird {
+    /* border: 1px solid white; */
+    width: 22rem;
+    height: 3rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    /* border: 1px solid green; */
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 4rem;
+    height: 2.5rem;
+}
+
+.home {
+    /* border: 1px solid red; */
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.exercise {
+    /* border: 1px solid blue; */
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.home .line {
+    background-color: white;
+    background-color: white;
+    height: 0.1rem;
+    width: 0rem;
+}
+
+.exercise .line2 {
+    background-color: white;
+    background-color: white;
+    height: 0.1rem;
+    width: 0rem;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.home:hover .line {
+    width: 4.5rem;
+    transition: 1s;
+}
+
+.exercise:hover .line2 {
+    width: 5.7rem;
+    transition: 1s;
+}
+
+.content .btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #000000a8;
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .maincon .inner .firstcon {
+        height: 46rem;
+    }
+
+    .maincon .inner .secondcon {
+        height: 46rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .maincon .inner .firstcon {
+        height: 37rem;
+    }
+
+    .maincon .inner .secondcon {
+        height: 37rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .maincon .inner .firstcon {
+        height: 17rem;
+    }
+
+    .maincon .inner .secondcon {
+        height: 17rem;
+        justify-content: center;
+    }
+
+    .content .sweat {
+        font-size: 2rem;
+    }
+
+    .content .check {
+        font-size: 1rem;
+    }
+
+    .content h1 {
+        display: none;
+    }
+
+    .secondcon .content {
+        width: 17rem;
+        /* border: 1px solid white; */
+        color: white;
+        height: 11rem;
+        margin-top: 4.6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .thirdcon {
+        height: 3rem;
+        justify-content: center;
+    }
+
+    .thirdcon .innerthird {
+        /* border: 1px solid white; */
+        width: 20rem;
+        margin-left: 1.2rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .home {
+        margin-top: 0.7rem;
+    }
+
+    .exercise {
+        margin-top: 0.7rem;
+    }
+
+    .home:hover .line {
+        width: 3.4rem;
+        transition: 1s;
+    }
+
+    .exercise:hover .line2 {
+        width: 4.2rem;
+        transition: 1s;
+    }
+
+    .check {
+        display: none;
+    }
+
+    .content .btn {
+        height: 2rem;
+        width: 8rem;
+        font-size: 0.9rem;
+        position: relative;
+        top: -1rem;
+    }
+    .upperthird {
+        margin-left: 2rem;
+        height: 2.5rem;
+    }
+    .upperthird img{
+        width: 2.5rem;
+    }
+
+}
+    
